@@ -5,7 +5,7 @@ import Message from "./Message";
 import Entry from "./Entry";
 import SearchBar from "./SearchBar";
 
-const App = () => {
+export default function App() {
   const [stations, setStations] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -44,7 +44,7 @@ const App = () => {
         <p>
           Check out the code on{" "}
           <a
-            href="https://github.com/your-repo-link"
+            href="https://github.com/ahernandez214/Bikes"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -54,6 +54,4 @@ const App = () => {
       </footer>
     </div>
   );
-};
-
-export default App;
+}
