@@ -1,6 +1,4 @@
-import React from "react";
-
-const Entry = ({ name, city, country }) => {
+export default function Entry({ name, city, country }) {
   return (
     <div className="entry">
       <h2>{name}</h2>
@@ -9,6 +7,4 @@ const Entry = ({ name, city, country }) => {
       </p>
     </div>
   );
-};
-
-export default Entry;
+}
