@@ -1,7 +1,11 @@
-import React from "react";
-
-const Message = ({ text }) => {
-  return <p className="message">{text}</p>;
-};
-
-export default Message;
+export default function SearchBar({ searchTerm, setSearchTerm }) {
+  return (
+    <input
+      type="text"
+      value={searchTerm}
+      onChange={(e) => setSearchTerm(e.target.value)}
+      placeholder="Type city name..."
+      className="search-bar"
+    />
+  );
+}
